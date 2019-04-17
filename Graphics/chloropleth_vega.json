@@ -1,0 +1,372 @@
+{
+  "config": {
+    "view": {
+      "width": 400,
+      "height": 300
+    }
+  },
+  "data": {
+    "url": "https://vega.github.io/vega-datasets/data/us-10m.json",
+    "format": {
+      "feature": "states",
+      "type": "topojson"
+    }
+  },
+  "mark": "geoshape",
+  "encoding": {
+    "color": {
+      "type": "quantitative",
+      "field": "Campaign Success Rate"
+    },
+    "tooltip": [
+      {
+        "type": "ordinal",
+        "field": "State"
+      },
+      {
+        "type": "quantitative",
+        "field": "Campaign Success Rate"
+      }
+    ]
+  },
+  "background":"#f0f0f0",
+  "view": {
+    "fill":"#f0f0f0",
+    "stroke":"#f0f0f0"
+  },
+  "height": 600,
+  "projection": {
+    "type": "albersUsa"
+  },
+  "title":
+    {
+      "text": "The Average Success Rate of Campaigns Varies Based on Creator's Location",
+      "fontSize":18
+    },
+  "transform": [
+    {
+      "lookup": "id",
+      "from": {
+        "data": {
+          "name": "data-5b766dbf25345d0b06b3fc2c24294172"
+        },
+        "key": "id",
+        "fields": [
+          "Campaign Success Rate"
+        ]
+      }
+    }
+  ],
+  "width": 1000,
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json",
+  "datasets": {
+    "data-5b766dbf25345d0b06b3fc2c24294172": [
+      {
+        "Abbreviation": "AL",
+        "Campaign Success Rate": 0.4188034188034188,
+        "State": "Alabama",
+        "id": 1
+      },
+      {
+        "Abbreviation": "AK",
+        "Campaign Success Rate": 0.5524079320113314,
+        "State": "Alaska",
+        "id": 2
+      },
+      {
+        "Abbreviation": "AZ",
+        "Campaign Success Rate": 0.4613413071337035,
+        "State": "Arizona",
+        "id": 4
+      },
+      {
+        "Abbreviation": "AR",
+        "Campaign Success Rate": 0.404296875,
+        "State": "Arkansas",
+        "id": 5
+      },
+      {
+        "Abbreviation": "CA",
+        "Campaign Success Rate": 0.5898519182349677,
+        "State": "California",
+        "id": 6
+      },
+      {
+        "Abbreviation": "CO",
+        "Campaign Success Rate": 0.5340755735492577,
+        "State": "Colorado",
+        "id": 8
+      },
+      {
+        "Abbreviation": "CT",
+        "Campaign Success Rate": 0.5469314079422383,
+        "State": "Connecticut",
+        "id": 9
+      },
+      {
+        "Abbreviation": "DE",
+        "Campaign Success Rate": 0.4716312056737589,
+        "State": "Delaware",
+        "id": 10
+      },
+      {
+        "Abbreviation": "DC",
+        "Campaign Success Rate": 0.5664652567975831,
+        "State": "District of Columbia",
+        "id": 11
+      },
+      {
+        "Abbreviation": "FL",
+        "Campaign Success Rate": 0.3694986296953087,
+        "State": "Florida",
+        "id": 12
+      },
+      {
+        "Abbreviation": "GA",
+        "Campaign Success Rate": 0.4146706586826348,
+        "State": "Georgia",
+        "id": 13
+      },
+      {
+        "Abbreviation": "HI",
+        "Campaign Success Rate": 0.4693520140105079,
+        "State": "Hawaii",
+        "id": 15
+      },
+      {
+        "Abbreviation": "ID",
+        "Campaign Success Rate": 0.4863123993558776,
+        "State": "Idaho",
+        "id": 16
+      },
+      {
+        "Abbreviation": "IL",
+        "Campaign Success Rate": 0.5709515859766278,
+        "State": "Illinois",
+        "id": 17
+      },
+      {
+        "Abbreviation": "IN",
+        "Campaign Success Rate": 0.4362057448229793,
+        "State": "Indiana",
+        "id": 18
+      },
+      {
+        "Abbreviation": "IA",
+        "Campaign Success Rate": 0.5060422960725075,
+        "State": "Iowa",
+        "id": 19
+      },
+      {
+        "Abbreviation": "KS",
+        "Campaign Success Rate": 0.4141914191419142,
+        "State": "Kansas",
+        "id": 20
+      },
+      {
+        "Abbreviation": "KY",
+        "Campaign Success Rate": 0.4544491525423729,
+        "State": "Kentucky",
+        "id": 21
+      },
+      {
+        "Abbreviation": "LA",
+        "Campaign Success Rate": 0.5145888594164456,
+        "State": "Louisiana",
+        "id": 22
+      },
+      {
+        "Abbreviation": "ME",
+        "Campaign Success Rate": 0.5887850467289719,
+        "State": "Maine",
+        "id": 23
+      },
+      {
+        "Abbreviation": "MD",
+        "Campaign Success Rate": 0.5095828635851184,
+        "State": "Maryland",
+        "id": 24
+      },
+      {
+        "Abbreviation": "MA",
+        "Campaign Success Rate": 0.6710897797854319,
+        "State": "Massachusetts",
+        "id": 25
+      },
+      {
+        "Abbreviation": "MI",
+        "Campaign Success Rate": 0.5133264105226722,
+        "State": "Michigan",
+        "id": 26
+      },
+      {
+        "Abbreviation": "MN",
+        "Campaign Success Rate": 0.6237580993520518,
+        "State": "Minnesota",
+        "id": 27
+      },
+      {
+        "Abbreviation": "MS",
+        "Campaign Success Rate": 0.40762463343108507,
+        "State": "Mississippi",
+        "id": 28
+      },
+      {
+        "Abbreviation": "MO",
+        "Campaign Success Rate": 0.4966092853416797,
+        "State": "Missouri",
+        "id": 29
+      },
+      {
+        "Abbreviation": "MT",
+        "Campaign Success Rate": 0.5925925925925926,
+        "State": "Montana",
+        "id": 30
+      },
+      {
+        "Abbreviation": "NE",
+        "Campaign Success Rate": 0.44038929440389296,
+        "State": "Nebraska",
+        "id": 31
+      },
+      {
+        "Abbreviation": "NV",
+        "Campaign Success Rate": 0.4997046662728883,
+        "State": "Nevada",
+        "id": 32
+      },
+      {
+        "Abbreviation": "NH",
+        "Campaign Success Rate": 0.5353728489483748,
+        "State": "New Hampshire",
+        "id": 33
+      },
+      {
+        "Abbreviation": "NJ",
+        "Campaign Success Rate": 0.4728990551964197,
+        "State": "New Jersey",
+        "id": 34
+      },
+      {
+        "Abbreviation": "NM",
+        "Campaign Success Rate": 0.5298804780876494,
+        "State": "New Mexico",
+        "id": 35
+      },
+      {
+        "Abbreviation": "NY",
+        "Campaign Success Rate": 0.6532649572649573,
+        "State": "New York",
+        "id": 36
+      },
+      {
+        "Abbreviation": "NC",
+        "Campaign Success Rate": 0.4728601252609603,
+        "State": "North Carolina",
+        "id": 37
+      },
+      {
+        "Abbreviation": "ND",
+        "Campaign Success Rate": 0.4640522875816994,
+        "State": "North Dakota",
+        "id": 38
+      },
+      {
+        "Abbreviation": "OH",
+        "Campaign Success Rate": 0.4698940998487141,
+        "State": "Ohio",
+        "id": 39
+      },
+      {
+        "Abbreviation": "OK",
+        "Campaign Success Rate": 0.4522968197879858,
+        "State": "Oklahoma",
+        "id": 40
+      },
+      {
+        "Abbreviation": "OR",
+        "Campaign Success Rate": 0.6318611987381704,
+        "State": "Oregon",
+        "id": 41
+      },
+      {
+        "Abbreviation": "PA",
+        "Campaign Success Rate": 0.5615615615615616,
+        "State": "Pennsylvania",
+        "id": 42
+      },
+      {
+        "Abbreviation": "RI",
+        "Campaign Success Rate": 0.6113445378151261,
+        "State": "Rhode Island",
+        "id": 44
+      },
+      {
+        "Abbreviation": "SC",
+        "Campaign Success Rate": 0.4558232931726908,
+        "State": "South Carolina",
+        "id": 45
+      },
+      {
+        "Abbreviation": "SD",
+        "Campaign Success Rate": 0.38235294117647056,
+        "State": "South Dakota",
+        "id": 46
+      },
+      {
+        "Abbreviation": "TN",
+        "Campaign Success Rate": 0.5944773175542406,
+        "State": "Tennessee",
+        "id": 47
+      },
+      {
+        "Abbreviation": "TX",
+        "Campaign Success Rate": 0.4883187035786631,
+        "State": "Texas",
+        "id": 48
+      },
+      {
+        "Abbreviation": "UT",
+        "Campaign Success Rate": 0.547783251231527,
+        "State": "Utah",
+        "id": 49
+      },
+      {
+        "Abbreviation": "VT",
+        "Campaign Success Rate": 0.7356746765249538,
+        "State": "Vermont",
+        "id": 50
+      },
+      {
+        "Abbreviation": "VA",
+        "Campaign Success Rate": 0.4851444851444852,
+        "State": "Virginia",
+        "id": 51
+      },
+      {
+        "Abbreviation": "WA",
+        "Campaign Success Rate": 0.6217454194792671,
+        "State": "Washington",
+        "id": 53
+      },
+      {
+        "Abbreviation": "WV",
+        "Campaign Success Rate": 0.4485049833887043,
+        "State": "West Virginia",
+        "id": 54
+      },
+      {
+        "Abbreviation": "WI",
+        "Campaign Success Rate": 0.5331680099194048,
+        "State": "Wisconsin",
+        "id": 55
+      },
+      {
+        "Abbreviation": "WY",
+        "Campaign Success Rate": 0.5359477124183006,
+        "State": "Wyoming",
+        "id": 56
+      }
+    ]
+  }
+  }
